@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
+import { COLORS } from "./utils/colors";
 
 const GlobalStyles = createGlobalStyle`
   body{
@@ -8,6 +9,13 @@ const GlobalStyles = createGlobalStyle`
   }
   *{
     box-sizing: border-box;
+  }
+  h3{
+    color: ${COLORS.blue};
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 200px;
   }
 `;
 
